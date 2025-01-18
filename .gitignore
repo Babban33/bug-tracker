@@ -1,2 +1,7 @@
 /bugt/
 /__pycache__/
+
+*.env
+*.pyc
+*.pyo
+__pycache__/
