@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{{ bug.title }}</h2>
+<p><strong>Status:</strong> {{ bug.get_status_display }}</p>
+<p><strong>Priority:</strong> {{ bug.get_priority_display }}</p>
+<p><strong>Assigned to:</strong> {{ bug.assigned_to }}</p>
+<p><strong>Created by:</strong> {{ bug.created_by }}</p>
+<p><strong>Created at:</strong> {{ bug.created_at }}</p>
+<p><strong>Last updated:</strong> {{ bug.updated_at }}</p>
+<h3>Description</h3>
+<p>{{ bug.description }}</p>
+<a href="{% url 'update_bug' bug.pk %}" class="btn btn-primary">Update Bug</a>
+{% endblock %}
+
