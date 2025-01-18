@@ -20,3 +20,5 @@ create a .env file in root and add the printed key in the file
 
 update the settings.py with custom user model, email backend, dirs.
 
+```bash
+python manage.py makemigrations
