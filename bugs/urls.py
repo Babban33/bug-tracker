@@ -1,6 +1,9 @@
 from django.urls import path
-from bugs import views
+from . import views
 
 urlpatterns = [
-    path('trends/', views.bug_trends, name='bug_trends'),
+    path('', views.bug_list, name='bug_list'),
+    path('create/', views.create_bug, name='create_bug'),
+    path('<int:pk>/', views.bug_detail, name='bug_detail'),
+    path('<int:pk>/update/', views.update_bug, name='update_bug'),
 ]
