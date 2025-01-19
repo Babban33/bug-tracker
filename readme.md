@@ -6,24 +6,10 @@ A comprehensive Bug Tracking System designed to streamline issue management and 
 
 ---
 
-<div align="center">
-  <a href="https://your-live-link.com" target="_blank" style="text-decoration: none;">
-    <button style="
-      background-color: #4CAF50; 
-      border: none; 
-      color: white; 
-      padding: 10px 20px; 
-      text-align: center; 
-      text-decoration: none; 
-      display: inline-block; 
-      font-size: 16px; 
-      border-radius: 5px;
-      cursor: pointer;
-    ">
-      🚀 Live Demo
-    </button>
-  </a>
-</div>
+## Live Demo
+
+Check out the live application: [Bug Tracking System Live](https://chaitanya33.pythonanywhere.com/)
+
 
 ---
 
