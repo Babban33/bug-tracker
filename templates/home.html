@@ -3,36 +3,40 @@
 {% block title %}Bug Tracker - Home{% endblock %}
 
 {% block content %}
-<header class="bg-primary text-white text-center py-5">
-    <h1 class="display-4">Welcome to Bug Tracker</h1>
-    <p class="lead">Efficiently manage and track bugs in your software projects</p>
-    <a href="{% url 'register' %}" class="btn btn-light btn-lg mt-3">Get Started</a>
+<header class="hero-section text-white text-center py-5">
+    <h1 class="display-4 mb-4">Welcome to Bug Tracker</h1>
+    <p class="lead mb-4">Efficiently manage and track bugs in your software projects</p>
+    {% load static %}
+    <a href="{% url 'register' %}" class="btn btn-light btn-lg">Get Started</a>
 </header>
 
-<section class="py-5">
+<section class="features-section py-5">
     <div class="container">
         <h2 class="text-center mb-5">Key Features</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="card h-100">
+                <div class="card h-100 feature-card">
                     <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-users text-primary me-2"></i>User Management</h5>
+                        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">User Management</h5>
                         <p class="card-text">Admin, Developer, and Tester roles with specific permissions.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card h-100">
+                <div class="card h-100 feature-card">
                     <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-tasks text-primary me-2"></i>Bug Tracking</h5>
+                        <i class="fas fa-tasks fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Bug Tracking</h5>
                         <p class="card-text">Create, update, and delete bug reports. Assign bugs to developers.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card h-100">
+                <div class="card h-100 feature-card">
                     <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-chart-line text-primary me-2"></i>Dashboards</h5>
+                        <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Dashboards</h5>
                         <p class="card-text">Separate dashboards for Admin, Developers, and Testers.</p>
                     </div>
                 </div>
@@ -41,27 +45,27 @@
     </div>
 </section>
 
-<section class="bg-light py-5">
+<section class="user-roles-section bg-light py-5">
     <div class="container">
         <h2 class="text-center mb-5">User Roles</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="text-center">
-                    <i class="fas fa-user-shield fa-3x text-primary mb-3"></i>
+                <div class="text-center user-role-card">
+                    <i class="fas fa-user-shield fa-4x text-primary mb-3"></i>
                     <h4>Admin</h4>
                     <p>Manage users and monitor all bugs</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="text-center">
-                    <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                <div class="text-center user-role-card">
+                    <i class="fas fa-code fa-4x text-primary mb-3"></i>
                     <h4>Developer</h4>
                     <p>Work on assigned bugs and update status</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="text-center">
-                    <i class="fas fa-vial fa-3x text-primary mb-3"></i>
+                <div class="text-center user-role-card">
+                    <i class="fas fa-vial fa-4x text-primary mb-3"></i>
                     <h4>Tester</h4>
                     <p>Report bugs and verify bug fixes</p>
                 </div>
@@ -70,35 +74,43 @@
     </div>
 </section>
 
-<section class="py-5">
+<section class="tech-stack-section py-5">
     <div class="container">
         <h2 class="text-center mb-5">Tech Stack</h2>
         <div class="row">
             <div class="col-md-3 col-sm-6 mb-4">
-                <div class="text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="50" height="50">
-                    <h5 class="mt-2">Python</h5>
+                <div class="text-center tech-stack-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="80" height="80">
+                    <h5 class="mt-3">Python</h5>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-                <div class="text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" width="50" height="50">
-                    <h5 class="mt-2">Django</h5>
+                <div class="text-center tech-stack-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" width="80" height="80">
+                    <h5 class="mt-3">Django</h5>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-                <div class="text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap" width="50" height="50">
-                    <h5 class="mt-2">Bootstrap</h5>
+                <div class="text-center tech-stack-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap" width="80" height="80">
+                    <h5 class="mt-3">Bootstrap</h5>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-                <div class="text-center">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" width="50" height="50">
-                    <h5 class="mt-2">SQLite</h5>
+                <div class="text-center tech-stack-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" width="80" height="80">
+                    <h5 class="mt-3">SQLite</h5>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<section class="cta-section bg-primary text-white text-center py-5">
+    <div class="container">
+        <h2 class="mb-4">Ready to streamline your bug tracking process?</h2>
+        <a href="{% url 'register' %}" class="btn btn-light btn-lg">Sign Up Now</a>
+    </div>
+</section>
 {% endblock %}
+
