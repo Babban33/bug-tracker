@@ -13,6 +13,8 @@ Check out the live application: [Bug Tracking System Live](https://chaitanya33.p
 
 ---
 
+## This Repository also has [Dependency Checker](/checker.md).
+
 ## Key Features
 
 ### **User Authentication and Role Management**
