@@ -1,0 +1,70 @@
+name: Dependency Checker
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Runs every Monday at midnight
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  check-dependencies:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Create requirements.txt if missing
+        run: |
+          if [ ! -f requirements.txt ]; then
+            echo "# Example dependencies" > requirements.txt
+            echo "requests" >> requirements.txt
+            echo "flask" >> requirements.txt
+          fi
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pip-tools
+
+      - name: Check outdated dependencies
+        run: |
+          if [ ! -f outdated.txt ]; then
+            touch outdated.txt
+          fi
+          pip list --outdated > outdated.txt
+        id: outdated
+
+      - name: Create or update dependency_status.md with timestamp
+        run: |
+          TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
+          if [ ! -f dependency_status.md ]; then
+            echo "## Dependency Status" > dependency_status.md
+          else
+            echo "## Dependency Status" > dependency_status.md
+          fi
+          echo "" >> dependency_status.md
+          echo "**Last checked on:** $TIMESTAMP" >> dependency_status.md
+          echo "" >> dependency_status.md
+          if [ -s outdated.txt ]; then
+            echo "The following packages have newer versions available:" >> dependency_status.md
+            echo "" >> dependency_status.md
+            cat outdated.txt >> dependency_status.md
+          else
+            echo "All dependencies are up-to-date." >> dependency_status.md
+          fi
+        id: update-markdown
+
+      - name: Commit changes
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dependency_status.md requirements.txt outdated.txt
+          git commit -m "Updated dependency status on $(date +"%Y-%m-%d %H:%M:%S")" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
