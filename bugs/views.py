@@ -1,3 +1,4 @@
+from django.core.paginator import Paginator
 import io
 import base64
 from django.db.models import Count
@@ -57,7 +58,16 @@ def bug_list(request):
         if priority:
             bugs = bugs.filter(priority=priority)
 
-    return render(request, 'bugs/bug_list.html', {'bugs': bugs, 'form': form})
+    paginator = Paginator(bugs, 10)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    context = {
+        'form': form,
+        'bugs': page_obj,
+    }
+    return render(request, 'bugs/bug_list.html', context)
+
 
 @login_required
 def create_bug(request):
