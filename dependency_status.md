@@ -1,6 +1,6 @@
 ## Dependency Status
 
-**Last checked on:** 2025-03-17 00:47:05
+**Last checked on:** 2025-03-24 00:46:52
 
 The following packages have newer versions available:
 
@@ -12,4 +12,4 @@ fonttools  4.55.3  4.56.0 wheel
 kiwisolver 1.4.7   1.4.8  wheel
 matplotlib 3.9.4   3.10.1 wheel
 numpy      2.0.2   2.2.4  wheel
-tzdata     2024.2  2025.1 wheel
+tzdata     2024.2  2025.2 wheel
