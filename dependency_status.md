@@ -1,6 +1,6 @@
 ## Dependency Status
 
-**Last checked on:** 2025-04-28 00:48:51
+**Last checked on:** 2025-05-05 00:50:58
 
 The following packages have newer versions available:
 
@@ -14,7 +14,7 @@ matplotlib        3.9.4   3.10.1 wheel
 numpy             2.0.2   2.2.5  wheel
 packaging         24.2    25.0   wheel
 pillow            11.1.0  11.2.1 wheel
-pip               25.0.1  25.1   wheel
+pip               25.1    25.1.1 wheel
 pyparsing         3.2.1   3.2.3  wheel
 python-dotenv     1.0.1   1.1.0  wheel
 typing_extensions 4.12.2  4.13.2 wheel
