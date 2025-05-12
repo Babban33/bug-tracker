@@ -1,16 +1,16 @@
 ## Dependency Status
 
-**Last checked on:** 2025-05-05 00:50:58
+**Last checked on:** 2025-05-12 00:51:06
 
 The following packages have newer versions available:
 
 Package           Version Latest Type
 ----------------- ------- ------ -----
 contourpy         1.3.0   1.3.2  wheel
-Django            4.2.18  5.2    wheel
-fonttools         4.55.3  4.57.0 wheel
+Django            4.2.18  5.2.1  wheel
+fonttools         4.55.3  4.58.0 wheel
 kiwisolver        1.4.7   1.4.8  wheel
-matplotlib        3.9.4   3.10.1 wheel
+matplotlib        3.9.4   3.10.3 wheel
 numpy             2.0.2   2.2.5  wheel
 packaging         24.2    25.0   wheel
 pillow            11.1.0  11.2.1 wheel
