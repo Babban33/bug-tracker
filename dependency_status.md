@@ -1,12 +1,12 @@
 ## Dependency Status
 
-**Last checked on:** 2025-07-07 00:55:32
+**Last checked on:** 2025-07-14 00:55:51
 
 The following packages have newer versions available:
 
 Package           Version Latest Type
 ----------------- ------- ------ -----
-asgiref           3.8.1   3.9.0  wheel
+asgiref           3.8.1   3.9.1  wheel
 contourpy         1.3.0   1.3.2  wheel
 Django            4.2.18  5.2.4  wheel
 fonttools         4.55.3  4.58.5 wheel
