@@ -1,6 +1,6 @@
 ## Dependency Status
 
-**Last checked on:** 2025-07-28 00:58:17
+**Last checked on:** 2025-08-04 00:59:38
 
 The following packages have newer versions available:
 
@@ -11,10 +11,11 @@ contourpy         1.3.0   1.3.3  wheel
 Django            4.2.18  5.2.4  wheel
 fonttools         4.55.3  4.59.0 wheel
 kiwisolver        1.4.7   1.4.8  wheel
-matplotlib        3.9.4   3.10.3 wheel
+matplotlib        3.9.4   3.10.5 wheel
 numpy             2.0.2   2.3.2  wheel
 packaging         24.2    25.0   wheel
 pillow            11.1.0  11.3.0 wheel
+pip               25.1.1  25.2   wheel
 pyparsing         3.2.1   3.2.3  wheel
 python-dotenv     1.0.1   1.1.1  wheel
 typing_extensions 4.12.2  4.14.1 wheel
