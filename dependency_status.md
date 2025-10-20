@@ -1,6 +1,6 @@
 ## Dependency Status
 
-**Last checked on:** 2025-10-13 00:49:06
+**Last checked on:** 2025-10-20 00:50:52
 
 The following packages have newer versions available:
 
@@ -12,9 +12,9 @@ Django            4.2.18  5.2.7  wheel
 fonttools         4.55.3  4.60.1 wheel
 kiwisolver        1.4.7   1.4.9  wheel
 matplotlib        3.9.4   3.10.7 wheel
-numpy             2.0.2   2.3.3  wheel
+numpy             2.0.2   2.3.4  wheel
 packaging         24.2    25.0   wheel
-pillow            11.1.0  11.3.0 wheel
+pillow            11.1.0  12.0.0 wheel
 pyparsing         3.2.1   3.2.5  wheel
 python-dotenv     1.0.1   1.1.1  wheel
 typing_extensions 4.12.2  4.15.0 wheel
